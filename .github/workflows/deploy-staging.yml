@@ -24,8 +24,6 @@ jobs:
       - name: npm install and build webpack
         run: |
           npm install
-          npm install -g n 
-          n latest
           npm run build
       - uses: actions/upload-artifact@v3
         with:
